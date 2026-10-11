@@ -11,3 +11,5 @@ wheels/
 
 # config
 .env
+
+**/panic_button.png

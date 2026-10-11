@@ -5,9 +5,35 @@
         fetch("/trigger", { method: "POST" });
       };
     </script>
+    <style>
+      button {
+        margin: 0;
+        padding: 0;
+        border: none;
+        background: center / contain no-repeat
+          url("{{ url_for('static', filename='panic_button.png') }}");
+        width: 90%;
+        height: 90%;
+      }
+      div {
+        position: fixed;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        place-items: center;
+        height: 100dvh;
+        width: 100dvw;
+      }
+      body {
+        background-color: #000;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
   </head>
   <body>
-    <h2>Hallo Seacow</h2>
-    <button onclick="trigger()">Trigger</button>
+    <div>
+      <button onclick="trigger()" />
+    </div>
   </body>
 </html>
